@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CarDealer.Models.ViewModels.AddPartSupplierViewModel>
+@{
+    ViewBag.Title = "AddParts";
+}
+
+<h2>AddParts</h2>
+@using (@Html.BeginForm())
+{
+    <div class="form-group row"> 
+        @Html.Label("Name",null, new {@class= "form-control-label" })
+       @Html.TextBox("Name", null, new {@class= "form-control", placeholder= "Name of the part" })
+   
+      
+    </div>
+
+    <div class="form-group row">
+       @Html.Label("Price", null, new {@class= "form-control-label" })
+       @Html.TextBox("Price", null, new {@class = "form-control", step="0.1", placeholder = "Price" })
+       
+    </div>
+    <div class="form-group row">
+        @Html.Label("Quantity", null, new {@class= "form-control-label" })
+        @Html.TextBox("Quantity", null, new {@class = "form-control", placeholder = "Quantity", type ="number" })
+       
+    </div>
+
+    <div class="form-group row">
+        @Html.Label("Supplier", null, new { @class = "form-control-label" })
+        @Html.DropDownList("supplierId", new SelectList(Model, "Id", "Name"), new {@class = "form-control", id = "supplier" })
+    
+    </div>
+    <div class="form-group row">
+    <input type="submit" class="btn btn-outline-success btn-lg btn-block" value="Add Part" />
+        </div>
+}
+
+
+  
+       

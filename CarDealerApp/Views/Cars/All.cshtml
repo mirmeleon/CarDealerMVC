@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CarDealerApp.Models.CarViewModel>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All cars</h2>
+
+ 
+@Html.ActionLink("Add","AddCar", "Cars", null, new {@class ="btn btn-primary"})
+<br />
+<br />
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model =>model.Make):
+           
+        </th>
+        <th>@Html.DisplayNameFor(model=>model.Model):</th>
+        <th>@Html.DisplayNameFor(model=>model.TravelledDistance):</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TravelledDistance)
+            </td>
+        </tr>
+    }
+
+</table>

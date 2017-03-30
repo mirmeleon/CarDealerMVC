@@ -1,0 +1,24 @@
+﻿@model CarDealer.Models.ViewModels.DeletePartViewModel
+
+@{
+    ViewBag.Title = "DeletePart";
+}
+
+<h2>DeletePart</h2>
+
+<h3>@Model.Name</h3>
+<h4>Price - @Model.Price</h4>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+   
+    <hr />
+    <form method="post">
+        <input type="number" hidden="hidden" name="Id" value="@Model.Id" />
+        <div class="form-group">
+            <input class="btn btn-danger" type="submit" value="Delete" />
+        </div>
+    </form>
+
+   
+</div>

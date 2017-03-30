@@ -1,0 +1,42 @@
+﻿@model  IEnumerable<CarDealer.Models.ViewModels.Suppliers.EditSupplierViewModel> 
+@{
+    ViewBag.Title = "AddSupplier";
+}
+
+<h2>Add Supplier</h2> 
+
+    <a href="/supplier/addSupplier" class="btn btn-primary" type="button"> New supplier</a>
+    <br/>
+    <br/>
+
+<table class="table table-striped">
+    <tr>
+        <th>Name:</th>
+        <th>Importer:</th>
+        <th>Actions:</th>
+    </tr>
+    @foreach (var supplier in Model)
+    {
+        <tr>
+            <td>@supplier.Name</td>
+       
+       
+            @if (@supplier.IsImporter)
+            {
+                <td>Yes</td>
+            }
+            else
+            {
+                <td>No</td>
+            }
+      
+            <td>
+                <a href="/supplier/editSupplier/@supplier.Id" value="supplier.Id">Edit</a>
+                <a href="/supplier/deleteSupplier/@supplier.Id" value="supplier.Id">Delete</a>
+            </td>
+        </tr>
+    }
+   
+</table>
+
+

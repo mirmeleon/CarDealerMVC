@@ -1,0 +1,42 @@
+﻿@using System.Linq
+@model CarDealer.Models.ViewModels.Sales.AddSalesViewModel
+@{
+    ViewBag.Title = "AddSales";
+
+}
+
+<h2>AddSales</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.Label("Customer:", null, new { @class = "form-control-label" })
+        @Html.DropDownList("customerId", new SelectList(Model.Customers, "Id", "Name"), new { @class = "form-control", id = "customer" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Car:", null, new { @class = "form-control-label" })
+        
+        @Html.DropDownList("carId", Model.Cars.Select(item => new SelectListItem
+   {
+       Value = item.Id.ToString(),
+       Text = item.Make + " " + item.Model
+   }), new { @class = "form-control" })
+      
+    </div>
+    <div class="form-group">
+        @Html.Label("Discount:", null, new { @class = "form-control-label" })
+      
+         @Html.DropDownList("Discount", Model.Discounts.Select(item => new SelectListItem
+    {
+        Value = item.ToString(),
+        Text = item.ToString()
+    }), new { @class = "form-control" })
+ 
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="submit" value="Submit" />
+    </div>
+}
+
+

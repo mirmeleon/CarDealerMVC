@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CarDealerApp.Models.CustomerViewModel>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All</h2>
+
+<table class="table table-striped">
+    <tr>
+       
+        <th>@Html.DisplayNameFor(c=>c.Name)</th>
+        <th>@Html.DisplayNameFor(c=>c.Birthdate)</th>
+        <th>@Html.DisplayNameFor(c => c.IsYoungDriver)</th>
+        <th></th>
+       
+    </tr>
+    @foreach (var customer in Model)
+    {
+        <tr>
+        
+            <td>@Html.DisplayFor(model=>customer.Name)</td>
+            <td>@Html.DisplayFor(model => customer.Birthdate)</td>
+            <td>@Html.DisplayFor(model => customer.IsYoungDriver)</td>
+           
+        </tr>
+    }
+</table>
+

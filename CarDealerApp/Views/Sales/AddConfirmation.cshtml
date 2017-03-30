@@ -1,0 +1,40 @@
+﻿@model CarDealer.Models.ViewModels.Sales.AddSaleConfirmationViewModel 
+@{
+    ViewBag.Title = "AddConfirmation";
+}
+
+<h2>Review Sale</h2>
+
+<form method="post">
+   
+ <input type="number" hidden="hidden" value="@Model.CarId" name="carId"/>
+        <input type="number" hidden="hidden" value="@Model.CustomerId" name="customerId" />
+        <input type="number" hidden="hidden" value="@Model.TotalDiscount" name="Discount"/>
+   
+    <div class="form-group">
+        <label for="customer">Customer:</label>
+        <input type="text" class="form-control" value="@Model.CustomerName" disabled="disabled">
+    </div>
+    <div class="form-group">
+        <label for="car">Car:</label>
+        <input type="text" class="form-control" value="@Model.CarName" disabled="disabled">
+    </div>
+    <div class="form-group">
+        <label for="discount">Discount:</label>
+        <input type="text" class="form-control" value="@Model.TotalDiscount" disabled="disabled">
+    </div>
+    <div class="form-group">
+        <label for="discount">Car price:</label>
+        <input type="number" class="form-control" value="@Model.CarPrice" disabled="disabled">
+    </div>
+    <div class="form-group">
+        <label for="discount">Final car price:</label>
+        <input type="number" class="form-control" value="@Model.FinalCarPrice" disabled="disabled">
+    </div>
+
+    <div class="form-group">
+        <a href="/sales/all" class="btn btn-lg btn-info">Cancel</a>
+        <input class="btn btn-lg btn-primary" type="submit" value="Finalize"/>
+    </div>
+</form>
+

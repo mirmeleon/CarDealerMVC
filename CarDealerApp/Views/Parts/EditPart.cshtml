@@ -1,0 +1,36 @@
+﻿@model CarDealer.Models.ViewModels.EditPartViewModel
+
+@{
+    ViewBag.Title = "EditPart";
+}
+
+<h2>EditPart</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <h4>@Model.Name</h4>
+    <hr />
+    <div class="form-horizontal">
+       
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <input type="number" hidden="hidden" name="Id" value="@Model.Id" />
+        <div class="form-group">
+            <label for="price">Price: </label>
+            <input id="price" type="number" step="0.1" name="price" value="@Model.Price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity: </label>
+            <input id="quantity" type="number" name="quantity" value="@Model.Quantity" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+

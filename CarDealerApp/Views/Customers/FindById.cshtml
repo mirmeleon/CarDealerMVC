@@ -1,0 +1,25 @@
+﻿@model CarDealerApp.Models.CustomerByIdViewModel
+@{
+    ViewBag.Title = "FindById";
+}
+
+<h2>FindById</h2>
+
+<table class="table table-striped">
+    <tr>
+
+        <th>@Html.DisplayNameFor(c => c.Name)</th>
+        <th>@Html.DisplayNameFor(c => c.TotalSpentMoney)</th>
+        <th>@Html.DisplayNameFor(c => c.BoughtCarsCount)</th>
+        <th></th>
+
+    </tr>
+  
+        <tr>
+
+            <td>@Html.DisplayFor(model => Model.Name)</td>
+            <td>@Html.DisplayFor(model => Model.TotalSpentMoney)</td>
+            <td>@Html.DisplayFor(model => Model.BoughtCarsCount)</td>
+       </tr>
+   
+</table>

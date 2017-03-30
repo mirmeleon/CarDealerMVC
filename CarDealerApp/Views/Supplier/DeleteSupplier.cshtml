@@ -1,0 +1,12 @@
+﻿@model CarDealer.Models.ViewModels.Suppliers.DeleteSupplierViewModel
+@{
+    ViewBag.Title = "DeleteSupplier";
+}
+
+<h2>Delete Supplier</h2>
+<h3>Are you sure you want to delete @Model.Name and all it's parts?</h3>
+<br/>
+<form method="post">
+    <input type="number" value="@Model.Id" name="Id"  hidden="hidden" />
+    <input type="submit" class="btn btn-danger" value="Delete">
+</form>

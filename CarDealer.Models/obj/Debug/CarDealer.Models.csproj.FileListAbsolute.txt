@@ -1,0 +1,10 @@
+C:\Users\Dell\Desktop\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+C:\Users\Dell\Desktop\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+C:\Users\Dell\Desktop\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+C:\Users\Dell\Desktop\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
+C:\Users\Dell\Downloads\Softuni\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-mysolution\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+C:\Users\Dell\Downloads\Softuni\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-mysolution\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+C:\Users\Dell\Downloads\Softuni\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-mysolution\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Downloads\Softuni\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-mysolution\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+C:\Users\Dell\Downloads\Softuni\Asp.Net\hw-uslovia\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-mysolution\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
