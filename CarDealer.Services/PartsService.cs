@@ -7,8 +7,8 @@ using CarDealer.Models.ViewModels;
 
 namespace CarDealer.Services
 {
-   public class PartsService : Service
-    {
+   public class PartsService : Service, IPartsService
+   {
         public IEnumerable<AddPartSupplierViewModel> CreateViewModels()
         {
             

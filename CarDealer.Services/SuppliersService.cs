@@ -10,8 +10,8 @@ using CarDealerApp.Models;
 
 namespace CarDealer.Services
 {
-   public class SuppliersService : Service
-    {
+   public class SuppliersService : Service, ISuppliersService
+   {
         public IEnumerable<SupplierViewModel> GetSuppliers(string local)
         {
             IEnumerable<Supplier> suppliers;
@@ -58,7 +58,7 @@ namespace CarDealer.Services
             this.AddLog(userId, OperationLog.Edit, "suppliers");
         }
 
-        private void AddLog(int userId, OperationLog edit, string suppliers)
+       public void AddLog(int userId, OperationLog edit, string suppliers)
         {
             User user = this.Context.Users.Find(userId);
             Log log = new Log();

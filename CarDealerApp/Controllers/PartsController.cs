@@ -9,11 +9,11 @@ namespace CarDealerApp.Controllers
     [RoutePrefix("parts")]
     public class PartsController : Controller
     {
-        private PartsService service;
+        private IPartsService service;
 
-        public PartsController()
+        public PartsController(IPartsService service)
         {
-            this.service = new PartsService();
+            this.service = service;
         }
 
 
@@ -42,7 +42,7 @@ namespace CarDealerApp.Controllers
                 this.service.AddPart(addPartBm);
                return this.RedirectToAction("allParts", "Parts");
             }
-            return this.View();
+            return this.RedirectToAction("AddPart");
         }
 
         [HttpGet]

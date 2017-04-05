@@ -13,12 +13,12 @@ namespace CarDealerApp.Controllers
    [RoutePrefix("supplier")]
     public class SupplierController : Controller
     {
-        private SuppliersService service;
+        private ISuppliersService service;
       
 
-        public SupplierController()
+        public SupplierController(ISuppliersService service)
         {
-            this.service = new SuppliersService();
+            this.service = service;
         }
 
         [HttpGet]

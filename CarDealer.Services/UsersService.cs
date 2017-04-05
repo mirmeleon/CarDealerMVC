@@ -5,8 +5,8 @@ using CarDealer.Models.DbModels;
 
 namespace CarDealer.Services
 {
-  public class UsersService : Service
-    {
+  public class UsersService : Service, IUsersService
+  {
         public void RegisterUser(RegisterUserBm regUserBm)
         {
             var mapped = Mapper.Map<RegisterUserBm, User>(regUserBm);

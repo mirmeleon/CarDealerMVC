@@ -10,8 +10,8 @@ using CarDealerApp.Models;
 
 namespace CarDealer.Services
 {
-  public  class CustomersService : Service
-    {
+  public  class CustomersService : Service, ICustomersService
+  {
         public IEnumerable<CustomerViewModel> GetAll(string order)
         {
 

@@ -5,8 +5,8 @@ using CarDealer.Models.ViewModels.Logs;
 
 namespace CarDealer.Services
 {
-  public class LogsService : Service
-    {
+  public class LogsService : Service, ILogsService
+  {
         public AllLogsPageViewModel GetAllLogsPage(string username, int? page)
         {
             int currentPage = 1;

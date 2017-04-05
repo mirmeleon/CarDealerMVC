@@ -9,8 +9,8 @@ using CarDealerApp.Models;
 
 namespace CarDealer.Services
 {
-   public class SalesService : Service
-    {
+   public class SalesService : Service, ISalesService
+   {
         public SalesViewModel GetSalesById(int id)
         {
             if (id == 0)

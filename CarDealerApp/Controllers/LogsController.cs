@@ -8,11 +8,11 @@ namespace CarDealerApp.Controllers
     [RoutePrefix("logs")]
     public class LogsController : Controller
     {
-        private LogsService service;
+        private ILogsService service;
 
-        public LogsController()
+        public LogsController(ILogsService service)
         {
-            this.service = new LogsService();
+            this.service = service;
         }
      
         [HttpGet]

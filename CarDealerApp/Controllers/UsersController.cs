@@ -12,12 +12,12 @@ namespace CarDealerApp.Controllers
     [RoutePrefix("users")]
     public class UsersController : Controller
     {
-        private UsersService service;
+        private IUsersService service;
 
 
-        public UsersController()
+        public UsersController(IUsersService service)
         {
-            this.service = new UsersService();
+            this.service = service;
         }
 
         [HttpGet]

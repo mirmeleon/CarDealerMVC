@@ -13,11 +13,11 @@ namespace CarDealerApp.Controllers
     public class SalesController : Controller
     {
         
-        private SalesService service;
+        private ISalesService service;
 
-        public SalesController()
+        public SalesController(ISalesService service)
         {
-            this.service = new SalesService();
+            this.service = service;
         }
 
        

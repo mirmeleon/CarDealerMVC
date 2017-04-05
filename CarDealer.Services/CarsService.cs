@@ -7,8 +7,8 @@ using CarDealerApp.Models;
 
 namespace CarDealer.Services
 {
-   public class CarsService : Service
-    {
+   public class CarsService : Service, ICarsService
+   {
         public IEnumerable<CarViewModel> GetCarsByMake(string make)
         {
             IEnumerable<Car> carsFromDb;
